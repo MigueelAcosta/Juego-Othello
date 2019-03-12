@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cliente.Controllers.HistorialDePartidasController">
+   <children>
+      <ImageView fx:id="fondo" fitHeight="502.0" fitWidth="703.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../Abstract%20Blue%20backgrounds%2041.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="regresar" layoutX="28.0" layoutY="42.0" mnemonicParsing="false" onAction="#regresarAlMenuPrincipal" text="Regresar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="titulo" layoutX="199.0" layoutY="37.0" text="Historial de Partidas " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <TableView fx:id="tabla" layoutX="79.0" layoutY="116.0" prefHeight="347.0" prefWidth="559.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="columnaFecha" prefWidth="100.0" text="fecha" />
+            <TableColumn fx:id="columnaAdversario" prefWidth="200.0" text="adversario" />
+            <TableColumn fx:id="columnaDuracion" prefWidth="120.0" text="duracion" />
+            <TableColumn fx:id="columnaResultado" prefWidth="125.0" text="resultado" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

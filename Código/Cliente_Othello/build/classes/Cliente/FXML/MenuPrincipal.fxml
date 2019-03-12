@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cliente.Controllers.MenuPrincipalController">
+   <children>
+      <ImageView fx:id="fondo" fitHeight="500.0" fitWidth="703.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../wallpapers-retro-blue-abstract-images-199443.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="titulo" layoutX="250.0" layoutY="40.0" text="Juego Othello" textFill="#fffafa">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="mensajeBienvenida" layoutX="40.0" layoutY="126.0" text="Bienvenido, 12345678901234567890 " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="jugarVsCPU" layoutX="40.0" layoutY="169.0" mnemonicParsing="false" onAction="#jugarContraLaCPU" text="Jugar contra CPU">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="jugarEnLinea" layoutX="40.0" layoutY="214.0" mnemonicParsing="false" onAction="#jugarEnLinea" text="Jugar en Linea">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="historial" layoutX="40.0" layoutY="260.0" mnemonicParsing="false" onAction="#verHistorialDePartidas" text="Ver historial de partidas">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="configuracion" layoutX="41.0" layoutY="305.0" mnemonicParsing="false" onAction="#cambiarConfiguracion" text="Configuración">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="tituloTabla" layoutX="429.0" layoutY="122.0" text="Mejores Jugadores" textFill="#fffefe">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabla" layoutX="402.0" layoutY="155.0" prefHeight="282.0" prefWidth="240.0">
+        <columns>
+          <TableColumn fx:id="columnaUsuario" prefWidth="162.0" text="user" />
+          <TableColumn fx:id="columnaNumeroDeVictorias" prefWidth="77.0" text="Victories" />
+        </columns>
+      </TableView>
+      <Label fx:id="numeroDeVictorias" layoutX="402.0" layoutY="444.0" text="Tu numero de Victorias: 999" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cliente.Controllers.ConfiguracionController">
+   <children>
+      <ImageView fx:id="fondo" fitHeight="500.0" fitWidth="700.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../the-background-301144_960_720.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="titulo" layoutX="163.0" layoutY="64.0" text="Configuracion del juego Othello">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="idioma" layoutX="49.0" layoutY="176.0" text="Seleccione Idioma:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="ip" layoutX="49.0" layoutY="233.0" text="Ingrese la IP del Servidor:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="puerto" layoutX="49.0" layoutY="289.0" text="Ingrese el Puerto del Servidor:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button fx:id="cancelar" layoutX="480.0" layoutY="426.0" mnemonicParsing="false" onAction="#cancelarConfiguracion" text="Cancelar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="guardar" layoutX="577.0" layoutY="426.0" mnemonicParsing="false" onAction="#guardarConfiguracion" text="Guardar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ComboBox fx:id="idiomas" layoutX="226.0" layoutY="174.0" prefWidth="150.0" />
+      <TextField fx:id="txtPuerto" layoutX="254.0" layoutY="287.0" prefHeight="25.0" prefWidth="122.0" />
+      <TextField fx:id="txtIp" layoutX="226.0" layoutY="231.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label fx:id="mensajeIP" layoutX="49.0" layoutY="214.0" prefHeight="17.0" prefWidth="264.0" text="IP Invalida, ejemplo: 127.123.123.123" textFill="#ff2600">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="mensajePuerto" layoutX="49.0" layoutY="270.0" prefHeight="17.0" prefWidth="185.0" text="Ingrese un Valor numerico" textFill="#ff2600">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

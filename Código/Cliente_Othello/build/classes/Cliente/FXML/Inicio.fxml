@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="708.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cliente.Controllers.InicioController">
+    <children>
+      <ImageView id="fondo" fx:id="fondo" fitHeight="500.0" fitWidth="708.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../279245.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="27.0" layoutY="138.0" prefHeight="327.0" prefWidth="315.0" style="-fx-background-color: E9ECEC; -fx-border-color: black;">
+         <children>
+            <Button id="botonInicio" fx:id="botonInicio" layoutX="115.0" layoutY="261.0" mnemonicParsing="false" onAction="#iniciarSesion" text="Iniciar Sesion" />
+            <Label id="subTituloInicio" fx:id="subTituloInicio" layoutX="91.0" layoutY="43.0" text="Iniciar Sesion">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <PasswordField id="txtContraseña" fx:id="txtContraseña" layoutX="115.0" layoutY="194.0" />
+            <TextField id="txtUsuario" fx:id="txtUsuario" layoutX="115.0" layoutY="130.0" />
+            <Label id="labelUsuario" fx:id="labelUsuario" layoutX="25.0" layoutY="134.0" text="Usuario:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="labelContraseña" fx:id="labelContraseña" layoutX="25.0" layoutY="196.0" text="Contraseña:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="mensajeInicio" fx:id="mensajeInicio" layoutX="27.0" layoutY="102.0" prefHeight="17.0" prefWidth="267.0" text="No se puede conectra con el servidor" textFill="#f41c00">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="367.0" layoutY="138.0" prefHeight="327.0" prefWidth="315.0" style="-fx-background-color: E9ECEC; -fx-border-color: black;">
+         <children>
+            <Label id="subTituloCrear" fx:id="subTituloCrear" layoutX="82.0" layoutY="35.0" text="Crear Cuenta">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <Label id="labelNombre" fx:id="labelNombre" layoutX="37.0" layoutY="103.0" text="Nombre de Usuario:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="labelCuentaContraseña" fx:id="labelCuentaContraseña" layoutX="37.0" layoutY="164.0" text="Contraseña:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="labelReContraseña" fx:id="labelReContraseña" layoutX="37.0" layoutY="218.0" text="Vuelve a escribir la contraseña:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField id="txtNombre" fx:id="txtNombre" layoutX="36.0" layoutY="129.0" prefHeight="25.0" prefWidth="189.0" />
+            <PasswordField id="txtCuentaContraseña" fx:id="txtCuentaContraseña" layoutX="36.0" layoutY="184.0" prefHeight="25.0" prefWidth="189.0" />
+            <PasswordField id="txtReContraseña" fx:id="txtReContraseña" layoutX="36.0" layoutY="245.0" prefHeight="25.0" prefWidth="189.0" />
+            <Button id="botonRegistrarse" fx:id="botonRegistrarse" layoutX="94.0" layoutY="277.0" mnemonicParsing="false" onAction="#crearCuenta" text="Registrarse" />
+            <Label id="mensajeCrear" fx:id="mensajeCrear" layoutX="36.0" layoutY="78.0" prefHeight="17.0" prefWidth="257.0" text="No se puede conectar con el servidor" textFill="#f41c00">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label id="titulo" fx:id="titulo" layoutX="254.0" layoutY="45.0" text="Juego Othello">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Button id="configuracion" fx:id="configuracion" layoutX="596.0" layoutY="45.0" mnemonicParsing="false" onAction="#cambiarConfiguracion" text="Configuración" />
+   </children>
+</AnchorPane>

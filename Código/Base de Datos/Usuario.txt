@@ -1,0 +1,3 @@
+User: AdminOthello
+Password: othellogame3612
+Hosts: 127.0.0.1
